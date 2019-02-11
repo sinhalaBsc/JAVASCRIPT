@@ -1,0 +1,19 @@
+https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
+
+Element.classList
+
+Methods
+add( String [, String [, ...]] )
+    Adds the specified class values. If these classes already exist in the element's class attribute they are ignored.
+remove( String [, String [, ...]] )
+    Removes the specified class values.
+    Note: Removing a class that does not exist does NOT throw an error.
+item( Number )
+    Returns the class value by index in the collection.
+toggle( String [, force] )
+    When only one argument is present: Toggle the class value; i.e., if the class exists then remove it and return false, if not, then add it and return true.
+    When a second argument is present: If the second argument evaluates to true, add the specified class value, and if it evaluates to false, remove it.
+contains( String )
+    Checks if the specified class value exists in the element's class attribute.
+replace( oldClass, newClass )
+    Replaces an existing class with a new class. 
