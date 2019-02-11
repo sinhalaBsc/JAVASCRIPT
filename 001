@@ -17,3 +17,15 @@ contains( String )
     Checks if the specified class value exists in the element's class attribute.
 replace( oldClass, newClass )
     Replaces an existing class with a new class. 
+
+# querySelector
+>>var navbarToggler = document.querySelector(".navbar-toggler");
+>>var navbarToggler = document.getElementsByClassName("navbar-toggler")[0];
+querySelector වල ප්‍රතිඵලය array එකක් නොවේ. නමට කලින් '.' තිත තැබිය යුතුය.
+getElementsByClassName ප්‍රතිඵලය ලැබෙන්නේ න්‍යාසයක් ලෙසය. එමනිසා addEventListener දීමේදී 
+එක් එක් ප්‍රතිඵලයට වෙන වෙනම addEventListener යෙදිය යුතුය.
+
+# querySelectorAll("li") vs getElementsByTagName("li")
+querySelectorAll("li")     - NodeList
+getElementsByTagName("li") - HTML Collection
+https://stackoverflow.com/questions/15763358/difference-between-htmlcollection-nodelists-and-arrays-of-objects
