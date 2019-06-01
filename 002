@@ -1,0 +1,17 @@
+    /*
+    var getNodes = str => new DOMParser().parseFromString(str, 'text/html').body.childNodes;
+    var storeNode = getNodes(dataStore.messages.allmsg[11][item].des.text);
+
+
+    storeNode.forEach(function(node){
+      editDataStore[node.className](node);
+    });
+     */
+    /* loop changed 'storeNode' to make string-Html
+       can't use for-loop or forEach-loop for this. bcz array change length and js
+       for-loop before every circle checking there array length */
+  /*  var htmlVal=document.createElement("div");
+    while(storeNode.length){
+      htmlVal.appendChild(storeNode[0]);
+    }
+    */
